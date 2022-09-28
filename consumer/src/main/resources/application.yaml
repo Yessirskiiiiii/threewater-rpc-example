@@ -1,0 +1,12 @@
+threewater:
+  rpc:
+    load-balance: weightRandom
+    server-port: 9999
+    register-address: localhost:2181
+    weight: 1
+    protocol: hessian
+spring:
+  application:
+    name: consumer
+server:
+  port: 8081
